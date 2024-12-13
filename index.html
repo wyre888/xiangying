@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        #top{
+            background-color: #212529;
+            width: 100%;
+            color:white;
+            display: flex;
+            line-height: 50px;
+            justify-content: space-between;
+        }
+        #top ul{
+            display: flex;
+            list-style-type: none;
+            margin-right: 100px;
+        }
+        #top h2{
+            padding-left: 100px;
+        }
+        #top ul li{
+            margin-right: 10px;
+            color:#ddd;
+        }
+        #main{
+            background-color: #212529;
+            display: flex;
+            width:100%;
+        }
+        #main-left{
+            width:65%;
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+        #main-left h2{
+            color: white;
+            font-size: 40px;
+        }
+        #main-left p{
+            font-size:16px;
+            color: white;
+            padding: 15px 0;
+        }
+        #main-left span{
+            color: #ffc107;
+        }
+        #main-left a{
+            color: white;
+            background-color: #0d6efd;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        #main-right{
+            width:60%;
+            margin-right: 100px;
+        }
+        #three{
+            width: 100%;
+            display: flex;
+            padding-top: 40px; 
+            text-align: center;
+        }
+        #three>div{
+            padding: 10px 30px;
+            width: 33.33%;
+        }
+        #le{
+            background-color: #212529;
+            margin-right: 50px;
+        }
+        #cen{
+            background-color: #343232;
+            margin-right: 50px;
+        }
+        #le,#rig p,h2{
+            color: #dee2e6;
+        
+        }
+
+        #rig{
+            background-color: #212529;
+            
+        }
+        #le a,#rig a{
+            text-decoration: none;
+            background-color: #0d6efd;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        #cen a{
+            text-decoration: none;
+            background-color: #212529;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        @media(max-width:768px){
+            #main{
+                flex-direction: column;
+            }
+            #main-right img{
+            margin-left: 100px;
+            width:120%;
+            }
+            #top{
+                flex-direction: column;
+            }
+            #top ul{
+                margin-left: 100px;
+                margin-right: 0;
+                flex-direction: column;
+            }
+            
+        }
+        @media (max-width:840px) {
+            #three{
+                flex-direction: column;
+            }
+            #three>div{
+                width: auto;
+            }
+            #le,#cen{
+                margin-right: 0px;
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h2>大绿色秋裤</h2>
+        <ul>
+            <li>Learning</li>
+            <li>questions</li>
+            <li>instructor</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="main-left">
+            <h2>我们来自英雄联盟大姿 <span>庄园</span></h2>  
+            <p>我们队伍是英雄联盟的忠实玩家而且是高玩我们致力于在英雄联盟领域企图触摸到网页设计的极境</p>
+            <a href="#">开一把吗</a>
+        </div>
+        <div id="main-right">
+            <img src="./family-confirming-evacuation-site-svgrepo-com.svg" alt="" width="100%">
+        </div>
+    </div>
+    <div id="three">
+        <div id="le">
+            <h2>贵财网页</h2>
+            <p>第一次实验贵财网页</p>
+            <a href="https://wyre888.github.io/guic11.24/%E7%8E%8B.html">点我开一把</a>
+        </div>
+        <div id="cen">
+            <h2>Hybird</h2>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur itaque quasi molestias maiores magni asperiores.</P>
+            <a href="#">read more</a>
+        </div>
+        <div id="rig">
+            <h2>In person</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur itaque quasi molestias maiores magni asperiores.</p>
+            <a href="#">read more</a>
+        </div>
+    </div>
+</body>
+</html>
